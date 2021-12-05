@@ -1,4 +1,3 @@
-
 (function($) {
     "use strict"; 
 	
@@ -242,7 +241,7 @@
        
         $.ajax({
             type: "POST",
-            url: "php/contactform-process.php",
+            url: "contactform-process.php",
             data: "name=" + name + "&email=" + email + "&message=" + message, 
             success: function(text) {
                 if (text == "success") {
